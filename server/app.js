@@ -25,7 +25,7 @@ app.set('views', './server/views/');
 // dica: o handler desta função é bem simples - basta passar para o template
 //       os dados do arquivo data/jogadores.json
 app.get('/', function (req, res) {
-    res.render('index');
+    res.render('index', db.jogadores);
 });
 
 
